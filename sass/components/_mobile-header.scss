@@ -1,4 +1,24 @@
-.head__btn-svg {
+.header__btn-open {
+    padding: 0;
+    background-color: transparent;
+    border-color: transparent;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.nav-bar__wrap {
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}
+
+.header__btn-close {
     padding: 0;
     background-color: transparent;
     border-color: transparent;
@@ -52,6 +72,11 @@
         font-size: 40px;
         line-height: 1.18;
         color: var(--primary-txt-color);
+
+        &:hover,
+        &:focus {
+            color: var(--blue-color);
+        }
     }
 
     &__contc-list {

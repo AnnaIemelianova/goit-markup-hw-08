@@ -24,7 +24,14 @@
     <header class="header">
       <div class="container header__container">
         <nav class="nav-bar header__nav-bar">
-          <a class="logo link header__logo" href="./index.html">Web<span class="logo__text text__color-black">Studio</span></a>
+          <div class="nav-bar__wrap">
+            <a class="logo link header__logo" href="./index.html">Web<span class="logo__text text__color-black">Studio</span></a>
+            <button type="button" class="header__btn-open head__btn-svg" data-menu-open>
+              <svg class="header__btn-icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-head-open"></use>
+              </svg>
+            </button>
+          </div>
           <ul class="menu list header__menu">
             <li class="menu__item"><a class="menu__link link current" href="./index.html">Студія</a></li>
             <li class="menu__item"><a class="menu__link link" href="./portfolio.html">Портфоліо</a></li>
@@ -47,11 +54,6 @@
             >
           </li>
         </ul>
-        <button type="button" class="header__btn-open head__btn-svg" data-menu-open>
-          <svg class="header__btn-icon" width="40" height="40">
-            <use href="./images/icons.svg#icon-head-open"></use>
-          </svg>
-        </button>
       </div>
       <div class="mob-menu header__mob-menu is-hidden" data-menu>
         <div class="mob-menu__container">
@@ -63,7 +65,7 @@
             </button>
             <ul class="mob-menu__nav-list">
               <li class="mob-menu__nav-item">
-                <a class="mob-menu__nav-link link mob-menu__accent-col" href="./index.html">Студія</a>
+                <a class="mob-menu__nav-link link" href="./index.html">Студія</a>
               </li>
               <li class="mob-menu__nav-item"><a class="mob-menu__nav-link link" href="./portfolio.html">Портфоліо</a></li>
               <li class="mob-menu__nav-item"><a class="mob-menu__nav-link link" href="#">Контакти</a></li>

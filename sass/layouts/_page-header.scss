@@ -18,8 +18,13 @@
     }
 
     &__nav-bar {
+
         display: flex;
         align-items: center;
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
     }
 }
 
