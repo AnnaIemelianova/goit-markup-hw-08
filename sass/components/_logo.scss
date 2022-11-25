@@ -1,0 +1,44 @@
+.logo {
+    font-family: $fontRaleway;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    color: var(--blue-color);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+
+    }
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+
+
+    @media screen and (min-width: 768px) {
+        margin-right: 87px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 92px;
+    }
+}
+
+.text__color-black {
+    color: var(--black-color);
+}
+
+.footer__logo {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
+}
+
+.text__color-white {
+    color: var(--white-color);
+}

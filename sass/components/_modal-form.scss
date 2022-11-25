@@ -1,0 +1,117 @@
+.modal-txt {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 12px;
+    color: var(--primary-txt-color);
+
+    @media screen and (min-width: 1200px) {
+        line-height: 1.15;
+    }
+}
+
+.modal-form-label {
+    display: block;
+    position: relative;
+}
+
+.modal-form-label+.modal-form-label {
+    margin-top: 10px;
+}
+
+.modal-form-label:focus-within>.modal-form-icon {
+    fill: var(--blue-color);
+}
+
+.modal-form-label>span {
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.01em;
+    color: var(--secondary-txt-color);
+    margin-bottom: 4px;
+}
+
+.modal-input {
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: transparent;
+    transition: border-color 250ms var(--timing-function);
+}
+
+.modal-form-input {
+    height: 40px;
+    padding-left: 30px;
+}
+
+.modal-form-comment {
+    height: 120px;
+    padding: 12px 16px;
+    resize: none;
+}
+
+.modal-input:focus {
+    border-color: var(--blue-color);
+}
+
+.modal-form-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transition: fill 250ms var(--timing-function);
+}
+
+.modal-form-field {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.modal-check-txt {
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width: 1200px) {
+        justify-content: center;
+    }
+}
+
+.modal-txt-privacy {
+    font-size: 12px;
+    line-height: 1.17;
+    // line-height: 1.71;
+    color: var(--secondary-txt-color);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
+}
+
+.modal-link-privacy {
+    color: var(--blue-color);
+}
+
+.modal-check-txt .modal-new-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 2px;
+    margin-right: 8px;
+    fill: transparent;
+
+    transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
+}
+
+.modal-form-check:checked+.modal-check-txt .modal-new-check {
+    background-color: var(--blue-color);
+    fill: var(--white-color);
+    border: transparent;
+}
+
+.modal-form-check:focus+.modal-check-txt .modal-new-check {
+    border-color: var(--blue-color);
+}

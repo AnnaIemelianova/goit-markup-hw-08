@@ -1,0 +1,21 @@
+:root {
+    --primary-txt-color: #212121;
+    --primary-txt-color-opacity: #21212133;
+    --secondary-txt-color: #757575;
+    --white-color: #ffffff;
+    --white-opacity-color: #ffffff99;
+    --black-color: #000000;
+    --blue-color: #2196f3;
+    --black-bg-color: #2F303A;
+    --light-bg-color: #F5F4FA;
+    --btn-color-accent: #188ce8;
+    --svg-border-color: #AFB1B8;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --overlay: #00000033;
+}
+
+$fontRoboto: 'Roboto', sans-serif;
+$fontRaleway: 'Raleway', sans-serif;
+
+$bgGradient: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4));

@@ -1,0 +1,106 @@
+.intro__icon-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        align-items: stretch;
+    }
+}
+
+.icon-list {
+
+    &__title {
+        margin-bottom: 10px;
+        font-size: inherit;
+        font-weight: 700;
+        line-height: 1.17;
+        text-transform: uppercase;
+        text-align: center;
+
+        @media screen and (min-width: 768px) {
+            text-align: start;
+        }
+    }
+
+    &__item {
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 30) / 2);
+        }
+
+        @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - 90) / 4);
+        }
+    }
+
+    &__subtitle {
+        // line-height: 1.7;
+        color: var(--secondary-txt-color);
+
+        @media screen and (min-width: 768px) {
+            max-width: 354px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            max-width: 270px;
+        }
+    }
+}
+
+
+
+.svg-antenna::before {
+    @include svg;
+    background-image: url(../images/antenna.svg);
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 270px;
+    }
+
+}
+
+.svg-clock::before {
+    @include svg;
+    background-image: url(../images/clock.svg);
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 270px;
+    }
+}
+
+.svg-diagram::before {
+    @include svg;
+    background-image: url(../images/diagram.svg);
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 270px;
+    }
+}
+
+.svg-astronaut::before {
+    @include svg;
+    background-image: url(../images/astronaut.svg);
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 270px;
+    }
+}

@@ -1,0 +1,120 @@
+.head__btn-svg {
+    padding: 0;
+    background-color: transparent;
+    border-color: transparent;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.header__mob-menu {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    background-color: var(--white-color);
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.mob-menu {
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding-left: 40px;
+        padding-right: 15px;
+        overflow: auto;
+    }
+
+
+    &__nav-list {
+        margin-bottom: 30px;
+    }
+
+    &__nav-item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    &__nav-link {
+        @include mob-link;
+        font-size: 40px;
+        line-height: 1.18;
+        color: var(--primary-txt-color);
+    }
+
+    &__contc-list {
+        margin-bottom: 64px;
+    }
+
+    &__contc-item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    &__soc-list {
+        display: flex;
+    }
+
+    &__soc-item:not(:last-child) {
+        margin-right: 10px;
+        padding-right: 10px;
+        position: relative;
+    }
+
+    &__soc-item:not(:last-child)::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 1px;
+        height: 100%;
+        background-color: var(--primary-txt-color-opacity);
+    }
+
+    &__soc-link {
+        @include mob-link;
+        font-size: 12px;
+        line-height: 1.22;
+
+        @media screen and (min-width: 400px) {
+            font-size: 16px;
+        }
+    }
+}
+
+.mob-menu__contc-item:first-child {
+    @include mob-link;
+    font-size: 34px;
+    line-height: 1.76;
+}
+
+.mob-menu__contc-item:last-child {
+    @include mob-link;
+    font-size: 24px;
+    line-height: 1.67;
+}
+
+.mob-menu__accent-col {
+    color: var(--blue-color);
+}
+
+.mob-menu__regular-col {
+    color: var(--secondary-txt-color);
+}
+
+.header__btn-close:hover .header__icon-close,
+.header__btn-close:focus .header__icon-close {
+    fill: var(--blue-color);
+}
