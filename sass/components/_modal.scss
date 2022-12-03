@@ -13,8 +13,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1) rotate(0);
-    min-width: 320px;
     width: calc(100% - 30px);
+    max-width: 450px;
     height: 609px;
     padding: 40px;
 
@@ -22,12 +22,8 @@
     transition: transform 250ms var(--timing-function);
     overflow: auto;
 
-    @media screen and (min-width: 768px) {
-        width: 450px;
-    }
-
     @media screen and (min-width: 1200px) {
-        width: 528px;
+        max-width: 528px;
         height: 581px;
     }
 

@@ -1,7 +1,8 @@
 .order {
-    min-height: 400px;
+    max-width: 1600px;
+    height: 400px;
     margin: 0 auto;
-    padding: 118px 60px;
+    padding: 118px 0;
     background-color: #C4C4C4;
     background-image: $bgGradient, url(../images/hero-bg-mob.jpg);
     background-repeat: no-repeat;
@@ -22,8 +23,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-        min-height: 600px;
-        max-width: 1600px;
+        height: 600px;
         padding: 200px 0;
         background-image: $bgGradient, url(../images/hero-bg.jpg);
 

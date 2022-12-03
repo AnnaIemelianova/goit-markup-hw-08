@@ -1,8 +1,8 @@
 .filters-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
-    width: 326px;
+    column-gap: 8px;
+    row-gap: 15px;
     margin-bottom: 40px;
 
 

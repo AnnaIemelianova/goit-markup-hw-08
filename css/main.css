@@ -62,7 +62,6 @@ img {
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-txt-color);
   background-color: var(--white-color);
@@ -466,8 +465,8 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1) rotate(0);
           transform: translate(-50%, -50%) scale(1) rotate(0);
-  min-width: 320px;
   width: calc(100% - 30px);
+  max-width: 450px;
   height: 609px;
   padding: 40px;
   background-color: var(--white-color);
@@ -478,15 +477,9 @@ body {
   overflow: auto;
 }
 
-@media screen and (min-width: 768px) {
-  .modal {
-    width: 450px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    max-width: 528px;
     height: 581px;
   }
 }
@@ -721,9 +714,10 @@ body {
 }
 
 .order {
-  min-height: 400px;
+  max-width: 1600px;
+  height: 400px;
   margin: 0 auto;
-  padding: 118px 60px;
+  padding: 118px 0;
   background-color: #C4C4C4;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg-mob.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob.jpg);
@@ -756,8 +750,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .order {
-    min-height: 600px;
-    max-width: 1600px;
+    height: 600px;
     padding: 200px 0;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
@@ -856,7 +849,7 @@ body {
 }
 
 .filter-list__btn {
-  padding: 6px 22px;
+  padding: 6px 25px;
   font-weight: 500;
   line-height: 1.62;
   letter-spacing: 0.03em;
@@ -869,6 +862,12 @@ body {
   transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
   transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
   transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
+}
+
+@media screen and (min-width: 1200px) {
+  .filter-list__btn {
+    padding: 6px 22px;
+  }
 }
 
 .filter-list__btn:hover, .filter-list__btn:focus {
@@ -982,6 +981,7 @@ body {
 }
 
 .icon-list__subtitle {
+  line-height: 1.7;
   color: var(--secondary-txt-color);
 }
 
@@ -1457,8 +1457,9 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 8px;
-  width: 326px;
+  -webkit-column-gap: 8px;
+          column-gap: 8px;
+  row-gap: 15px;
   margin-bottom: 40px;
 }
 
